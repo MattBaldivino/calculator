@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" /> 
+    <script src="index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="4">Note: Does not support 2 digit numbers.</td>
+        </tr>
+        <tr>
+            <td colspan="4"><input id="text" type="text"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onClick="display(value)"></td>
+            <td><input type="button" value="8" onClick="display(value)"></td>
+            <td><input type="button" value="9" onClick="display(value)"></td>
+            <td><input type="button" value="+" class="operation" onClick="displayOp(value)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onClick="display(value)"></td>
+            <td><input type="button" value="5" onClick="display(value)"></td>
+            <td><input type="button" value="6" onClick="display(value)"></td>
+            <td><input type="button" value="-" class="operation" onClick="displayOp(value)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onClick="display(value)"></td>
+            <td><input type="button" value="2" onClick="display(value)"></td>
+            <td><input type="button" value="3" onClick="display(value)"></td>
+            <td><input type="button" value="x" class="operation" onClick="displayOp(value)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="C" id="clear" onClick="clr()"></td>
+            <td><input type="button" value="0" onClick="display(value)"></td>
+            <td><input type="button" value="=" class="operation" onClick="solve()"></td>
+            <td><input type="button" value="/" class="operation" onClick="displayOp(value)"></td>
+        </tr>
+    </table>
+</body>
+</html>
